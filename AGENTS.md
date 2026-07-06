@@ -91,10 +91,22 @@ project is at or what to run next.
 
 ## Current Milestone Scope
 ### Decided
-- (none yet — run define-concept)
+- Core Loop: Interactive guitar tablature player and theory visualizer with dynamic, toggleable "Theory Lenses" that overlay musical concepts (decided 2026-07-06)
+- MVP Scope: A single pre-loaded demo song file with two initial theory lenses (Triads and Pentatonics) to validate the visualization engine (decided 2026-07-06)
+- Tab Rendering & Highlighting: Use AlphaTab to parse/render Guitar Pro/MusicXML files. The default behavior is highlight-in-place (color matching notes, leaving everything else visible). An additional 'Isolate' toggle will be built in a second pass to remove/reflow notes showing only the lens-matching notes. (decided 2026-07-06, revised 2026-07-06)
 
 ### Deferred
-- (none yet)
+- Web Scraping & Search (ultimate-guitar.com, songsterr.com, etc.) — not now, revisit later
+- AI Tab Generation (generating tabs from audio files) — not now, revisit later
+- User Accounts & Auth (Next-Auth/Supabase Auth, profiles) — not now, revisit later
+- File Uploads (allowing users to upload their own `.gp3/4/5/gpx/musicxml` files) — not now, revisit later
+- Advanced Theory Lenses (modes, jazz extensions, microtonality) — not now, revisit later
+- Multi-track Synthesis (focus on guitar track only) — not now, revisit later
 
 ### Open Questions (BLOCKING)
+- (none)
+
+## System Dependencies
+<!-- Homebrew-installed tools this project needs outside node_modules.
+     Empty = pure JS project, folder delete is a full clean slate. -->
 - (none yet)
