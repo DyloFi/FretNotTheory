@@ -35,9 +35,11 @@ contains:
 
 1. Overwrite `.agents/memory-decisions.md` with only its header block
    (the "Evolving Project Decisions & Lessons" title + format
-   instructions) plus one line: `(no entries yet — this project's first
-   real session will start the log)`. Delete every dated entry and the
-   `[TEMPLATE]` example, unconditionally.
+   instructions) plus a provenance line naming this project —
+   `<!-- project: <PROJECT NAME> -->` using the actual name from Step 3
+   — plus one line: `(no entries yet — this project's first real session
+   will start the log)`. Delete every dated entry and the `[TEMPLATE]`
+   example, unconditionally.
 2. In `.agents/pipeline-status.md`, clear the `## Milestone History`
    section back to `- (none yet)`. Clear `## Current Task` back to
    `(none in flight)`. Clear `## Active Research Questions` back to

@@ -15,6 +15,13 @@ this — Antigravity does not reliably invoke Stop hooks. See the
 Run: `git diff` and `git log -5 --oneline`
 Read the actual changes, not just file names.
 
+Also explicitly check for anything this session did that a code diff
+won't show: a new git remote, a new system-level (Homebrew/pip)
+dependency, a manually-edited config file outside the repo, an external
+service connected. If anything like that happened, it goes in the dated
+entry as its own bullet — "every action should be explainable" includes
+infra actions, not just code.
+
 ## Step 2 — Write the dated entry
 Append to `.agents/memory-decisions.md`, newest at top, using the
 existing format:

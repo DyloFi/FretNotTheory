@@ -38,3 +38,21 @@ If Step 2 surfaces a contradiction (e.g. two memory-decisions entries
 disagree, or AGENTS.md's Decided list doesn't cover this task) — stop
 and flag it. Do not silently pick one and proceed; that's how scope
 drift and repeated mistakes both start.
+
+## Step 5 — Scope gate (hard check, not advisory)
+Before handing off to IMPLEMENT, explicitly check the plan's concrete
+steps against AGENTS.md's Deferred list from Step 2. This is a real
+gate, not a note-and-proceed: if any planned step touches something
+listed as Deferred (e.g. plan calls for fetching something from the web
+when "Web Scraping & Search" is Deferred), STOP before IMPLEMENT and ask
+the user to confirm this is an intentional, approved exception — do not
+proceed on the assumption that "just this once" is fine. Log the
+resolution either way in the eventual REFLECT note.
+
+## Step 6 — Provenance check
+Confirm `.agents/memory-decisions.md`'s header comment names the
+current project. If it names a different project, or has no project
+name at all, STOP — do not treat any entries in that file as this
+project's history until this is resolved. This is the check that would
+have caught cross-project confusion immediately instead of requiring a
+manual investigation.

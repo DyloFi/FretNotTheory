@@ -23,7 +23,9 @@ STATE: PLAN
 ```
 
 ## PLAN
-1. Run `compose-context` (`.agents/commands/compose-context.md`).
+1. Run `compose-context` (`.agents/commands/compose-context.md`) —
+   including its Step 5 scope gate and Step 6 provenance check. Do not
+   proceed to IMPLEMENT if either of those stopped with a question.
 2. From the compressed context, write the concrete plan: what files
    change, what the smallest correct version looks like, what could go
    wrong. 3-6 bullets, not a design doc.
