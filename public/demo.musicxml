@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE score-partwise PUBLIC
+    "-//Recordare//DTD MusicXML 4.0 Partwise//EN"
+    "http://www.musicxml.org/dtds/partwise.dtd">
+<score-partwise version="4.0">
+  <work>
+    <work-title>Demo Song</work-title>
+  </work>
+  <part-list>
+    <score-part id="P1">
+      <part-name>Classic Guitar</part-name>
+    </score-part>
+  </part-list>
+  <part id="P1">
+    <!-- Measure 1: A C-Major Triad as a chord -->
+    <measure number="1">
+      <attributes>
+        <divisions>1</divisions>
+        <key>
+          <fifths>0</fifths>
+          <mode>major</mode>
+        </key>
+        <time>
+          <beats>4</beats>
+          <beat-type>4</beat-type>
+        </time>
+        <clef>
+          <sign>TAB</sign>
+          <line>5</line>
+        </clef>
+        <staff-details>
+          <staff-type>tab</staff-type>
+          <staff-lines>6</staff-lines>
+          <staff-tuning line="1">
+            <tuning-step>E</tuning-step>
+            <tuning-octave>2</tuning-octave>
+          </staff-tuning>
+          <staff-tuning line="2">
+            <tuning-step>A</tuning-step>
+            <tuning-octave>2</tuning-octave>
+          </staff-tuning>
+          <staff-tuning line="3">
+            <tuning-step>D</tuning-step>
+            <tuning-octave>3</tuning-octave>
+          </staff-tuning>
+          <staff-tuning line="4">
+            <tuning-step>G</tuning-step>
+            <tuning-octave>3</tuning-octave>
+          </staff-tuning>
+          <staff-tuning line="5">
+            <tuning-step>B</tuning-step>
+            <tuning-octave>3</tuning-octave>
+          </staff-tuning>
+          <staff-tuning line="6">
+            <tuning-step>E</tuning-step>
+            <tuning-octave>4</tuning-octave>
+          </staff-tuning>
+        </staff-details>
+      </attributes>
+      
+      <!-- C3 on String 5 (A string), Fret 3 (Triad root) -->
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>half</type>
+        <notations>
+          <technical>
+            <string>5</string>
+            <fret>3</fret>
+          </technical>
+        </notations>
+      </note>
+      
+      <!-- E3 on String 4 (D string), Fret 2 (Triad third) -->
+      <note>
+        <chord/>
+        <pitch>
+          <step>E</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>half</type>
+        <notations>
+          <technical>
+            <string>4</string>
+            <fret>2</fret>
+          </technical>
+        </notations>
+      </note>
+      
+      <!-- G3 on String 3 (G string), Fret 0 (Triad fifth) -->
+      <note>
+        <chord/>
+        <pitch>
+          <step>G</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>2</duration>
+        <type>half</type>
+        <notations>
+          <technical>
+            <string>3</string>
+            <fret>0</fret>
+          </technical>
+        </notations>
+      </note>
+
+      <!-- Pentatonic note 1: A3 on String 6 (E string), Fret 5 -->
+      <note>
+        <pitch>
+          <step>A</step>
+          <octave>3</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>quarter</type>
+        <notations>
+          <technical>
+            <string>6</string>
+            <fret>5</fret>
+          </technical>
+        </notations>
+      </note>
+      
+      <!-- Pentatonic note 2: C4 on String 6 (E string), Fret 8 -->
+      <note>
+        <pitch>
+          <step>C</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>quarter</type>
+        <notations>
+          <technical>
+            <string>6</string>
+            <fret>8</fret>
+          </technical>
+        </notations>
+      </note>
+    </measure>
+
+    <!-- Measure 2: More Pentatonic notes -->
+    <measure number="2">
+      <!-- Pentatonic note 3: D4 on String 5 (A string), Fret 5 -->
+      <note>
+        <pitch>
+          <step>D</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>quarter</type>
+        <notations>
+          <technical>
+            <string>5</string>
+            <fret>5</fret>
+          </technical>
+        </notations>
+      </note>
+
+      <!-- Pentatonic note 4: E4 on String 5 (A string), Fret 7 -->
+      <note>
+        <pitch>
+          <step>E</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>quarter</type>
+        <notations>
+          <technical>
+            <string>5</string>
+            <fret>7</fret>
+          </technical>
+        </notations>
+      </note>
+
+      <!-- Pentatonic note 5: G4 on String 4 (D string), Fret 5 -->
+      <note>
+        <pitch>
+          <step>G</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>quarter</type>
+        <notations>
+          <technical>
+            <string>4</string>
+            <fret>5</fret>
+          </technical>
+        </notations>
+      </note>
+
+      <!-- Pentatonic note 6: A4 on String 4 (D string), Fret 7 -->
+      <note>
+        <pitch>
+          <step>A</step>
+          <octave>4</octave>
+        </pitch>
+        <duration>1</duration>
+        <type>quarter</type>
+        <notations>
+          <technical>
+            <string>4</string>
+            <fret>7</fret>
+          </technical>
+        </notations>
+      </note>
+    </measure>
+  </part>
+</score-partwise>

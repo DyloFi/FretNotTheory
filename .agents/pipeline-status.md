@@ -5,8 +5,8 @@
 > if you feel lost — it tells you the next correct command to run.
 
 ## Current Stage
-STAGE: define-concept
-STATUS: not-started
+STAGE: build
+STATUS: in-progress
 
 <!--
 Valid STAGE values, in order:
@@ -33,9 +33,10 @@ Valid STATUS values:
 
 ## Milestone History
 <!-- Append one line per completed milestone. Newest at top. -->
-- (none yet)
+- [2026-07-06] Successfully integrated and rendered local guitar tablature using AlphaTab in Next.js.
+- [2026-07-06] Completed concept definition and research spike validating AlphaTab for rendering and dynamic note highlighting.
 
 ## Next Action
 <!-- Written in plain language by whichever command last ran, so the next
      session (or you, re-reading this cold) knows exactly what to do next. -->
-Run `define-concept` to lock down the core loop.
+Start the next task (implementing the music theory calculation engine or UI controls) by running session-start, then starting task-loop.
