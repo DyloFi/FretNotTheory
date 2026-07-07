@@ -1,0 +1,18 @@
+capability: ui-developer
+name: UI Developer
+owns: >
+  Main layout, page routing, sidebar/controls, visual theme, Tailwind/
+  shadcn components, and state management of which theory lenses are
+  active. (Ported from .agents/agent-team.md, confirmed 2026-07-06.)
+never_touches: >
+  Must never touch lib/theory.ts (theory math) or the internal drawing
+  logic of the TabPlayer component wrapper.
+trigger: >
+  Task involves constructing UI layout, designing components, or hooking
+  up page-level state.
+consult_before: >
+  tab-theory-engine capability's current NoteStyle/coloring contract if
+  the UI needs to trigger a lens change.
+verification: >
+  CRITIQUE confirms lib/theory.ts and TabPlayer's internal drawing logic
+  were not touched.

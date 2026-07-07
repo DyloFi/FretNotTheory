@@ -39,5 +39,11 @@ of a single generalist agent. Do not write to disk until confirmed.
 
 ## Step 6 — On confirmation
 - Write to `.agents/agent-team.md`
+- For each confirmed agent, also write/update a matching
+  `blueprint/capabilities/<agent-name>.yaml` using the format in
+  `blueprint/capabilities/README.md` (owns/never_touches/trigger/
+  consult_before/verification), so `blueprint/routing/router-protocol.md`
+  can route to them on every future task-loop run, not just read the
+  prose once.
 - Update `.agents/pipeline-status.md`: STAGE: build, STATUS: in-progress,
   Next Action: "Run session-start to begin building"

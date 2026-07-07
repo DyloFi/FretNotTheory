@@ -25,6 +25,11 @@ it's not a task yet — go back to `task-loop`'s PLAN step and split it.
 4. Files this task will actually touch — read them now, not from memory
    of an earlier pass in this thread. Code drifts; assumptions about it
    shouldn't.
+4.5. `blueprint/state/knowledge-index.json` — check for entries whose
+   tags overlap this task's keywords before treating anything as an
+   unknown; read the matching brief(s) in `.agents/research/`. See
+   `blueprint/research/research-integration.md` for the full protocol
+   this closes the loop on.
 5. Most recent relevant tool output only if this task is a continuation
    of one that just ran (e.g. re-fixing a build error) — otherwise skip.
 

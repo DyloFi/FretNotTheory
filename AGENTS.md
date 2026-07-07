@@ -23,6 +23,17 @@
 - `/lib` — utilities, Supabase client, helpers
 - `/lib/supabase.ts` — single source of truth for the Supabase client
 - `.agents/` — memory system (see below), not app code
+- `blueprint/` — non-destructive extension layer; wires `.agents/agent-team.md`
+  and `.agents/research/` back into the ongoing loop (see
+  `blueprint/README.md`)
+- `blueprint/capabilities/` — ui-developer.yaml and tab-theory-engine.yaml,
+  the structured form of this project's confirmed agent-team.md
+- `blueprint/routing/` — the PLAN-step logic that matches a task to one of
+  the two capabilities above
+- `blueprint/research/` — mid-task research trigger + how findings get
+  folded back into future tasks' context
+- `blueprint/state/knowledge-index.json` — queryable index over confirmed
+  `.agents/research/` briefs (currently: guitar-tab-rendering)
 
 ## Build & Test Commands
 - Install: `pnpm install`
@@ -60,6 +71,10 @@ contains keys/tokens).
   made or a new convention is adopted.
 - If Mem0 (MCP) is connected, prefer querying it for cross-project patterns
   before asking the user to re-explain something.
+- Before starting IMPLEMENT, consult `blueprint/capabilities/` (ui-developer
+  vs tab-theory-engine) via `blueprint/routing/router-protocol.md` — don't
+  guess which of the two agents owns a task. If a genuine research unknown
+  blocks a task mid-loop, follow `blueprint/research/research-integration.md`.
 
 ## Session Protocol
 These now live as real command files in `.agents/commands/` (not global-only

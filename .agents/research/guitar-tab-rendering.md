@@ -1,3 +1,11 @@
+---
+topic: Guitar Tablature Rendering & Dynamic Highlighting
+tags: [tab-rendering, alphatab, vexflow, osmd, guitar-pro, musicxml, note-highlighting]
+status: confirmed
+decided_date: 2026-07-06
+summary: Use AlphaTab for parsing/rendering Guitar Pro and MusicXML files with per-note NoteStyle coloring; it's the only option with native Guitar Pro support plus built-in note-level styling and playback.
+---
+
 # Research Brief: Guitar Tablature Rendering & Dynamic Highlighting
 
 ## Question

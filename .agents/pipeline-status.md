@@ -33,10 +33,26 @@ Valid STATUS values:
 
 ## Milestone History
 <!-- Append one line per completed milestone. Newest at top. -->
+- [2026-07-07] `blueprint/` layer added: agent-team.md's two agents
+  (UI Developer, Tab & Theory Engine Developer) ported into structured
+  capability files so task-loop's PLAN step routes to them on every task
+  instead of only reading the roster once; existing guitar-tab-rendering
+  brief retrofitted with front-matter and indexed into
+  blueprint/state/knowledge-index.json; mid-task research trigger added
+  so future unknowns get resolved and folded back in, not orphaned. Also
+  produced .agents/research/theory-calculation-engine.md (status:
+  proposed, tonal.js recommendation) as a live test of the new trigger —
+  not yet confirmed, not yet built.
 - [2026-07-06] Successfully integrated and rendered local guitar tablature using AlphaTab in Next.js.
 - [2026-07-06] Completed concept definition and research spike validating AlphaTab for rendering and dynamic note highlighting.
 
 ## Next Action
 <!-- Written in plain language by whichever command last ran, so the next
      session (or you, re-reading this cold) knows exactly what to do next. -->
-Start the next task (implementing the music theory calculation engine or UI controls) by running session-start, then starting task-loop.
+The soundfont/playback task is complete. Ready for the next feature task
+or to finalize the working session by running auto-memory. Before
+starting the music theory calculation engine specifically: read
+.agents/research/theory-calculation-engine.md (status: proposed) and
+either confirm it (flip status to "confirmed", re-run
+scripts/indexing/build-knowledge-index.sh) or redirect it — that's the
+one open loop from today's blueprint-layer work.
