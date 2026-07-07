@@ -39,4 +39,4 @@ Valid STATUS values:
 ## Next Action
 <!-- Written in plain language by whichever command last ran, so the next
      session (or you, re-reading this cold) knows exactly what to do next. -->
-Start the next task (implementing the music theory calculation engine or UI controls) by running session-start, then starting task-loop.
+The task is complete. Ready for the next feature task or to finalize the working session by running auto-memory.
