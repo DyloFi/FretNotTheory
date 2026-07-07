@@ -1,0 +1,33 @@
+[
+  {
+    "topic": "Guitar Tablature Rendering & Dynamic Highlighting",
+    "tags": [
+      "tab-rendering",
+      "alphatab",
+      "vexflow",
+      "osmd",
+      "guitar-pro",
+      "musicxml",
+      "note-highlighting"
+    ],
+    "brief_path": ".agents/research/guitar-tab-rendering.md",
+    "decided_date": "2026-07-06",
+    "status": "confirmed",
+    "summary": "Use AlphaTab for parsing/rendering Guitar Pro and MusicXML files with per-note NoteStyle coloring; it's the only option with native Guitar Pro support plus built-in note-level styling and playback."
+  },
+  {
+    "topic": "Music Theory Calculation Engine (Scale/Triad Membership)",
+    "tags": [
+      "music-theory",
+      "scale-membership",
+      "triad",
+      "pentatonic",
+      "tonal-js",
+      "teoria-js"
+    ],
+    "brief_path": ".agents/research/theory-calculation-engine.md",
+    "decided_date": "2026-07-07",
+    "status": "confirmed",
+    "summary": "Use tonal.js to compute triad/pentatonic scale membership per key rather than hand-rolling interval math or using the unmaintained teoria.js; wrap its pure functions in a small lib/theory.ts adapter that outputs note-name sets AlphaTab's NoteStyle pass can match against."
+  }
+]

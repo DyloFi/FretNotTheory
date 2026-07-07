@@ -26,9 +26,18 @@ STATE: PLAN
 1. Run `compose-context` (`.agents/commands/compose-context.md`) —
    including its Step 5 scope gate and Step 6 provenance check. Do not
    proceed to IMPLEMENT if either of those stopped with a question.
+1.5. Run `blueprint/routing/router-protocol.md`: which capability (from
+   `.agents/agent-team.md` if it exists, else `blueprint/capabilities/*.yaml`)
+   owns this task. Carry its boundary/never-touches into the plan as a
+   hard constraint. If nothing fits, stop per the protocol — don't invent
+   ownership and don't proceed un-owned.
+1.6. If a genuine feasibility/tradeoff unknown blocks writing the plan
+   (not a syntax lookup), follow `blueprint/research/research-integration.md`'s
+   mid-task path before continuing.
 2. From the compressed context, write the concrete plan: what files
    change, what the smallest correct version looks like, what could go
-   wrong. 3-6 bullets, not a design doc.
+   wrong. 3-6 bullets, not a design doc. Name the routed capability from
+   step 1.5.
 3. If the plan reveals this is actually 2+ unrelated tasks, stop and say
    so — split it, run task-loop separately for each.
 4. Update STATE: IMPLEMENT in pipeline-status.md.
@@ -56,6 +65,8 @@ plan:
 - Any edge case the plan didn't consider that's now visible in the
   actual code?
 - Is there a simpler version that does the same job?
+- Did the implementation stay inside the routed capability's
+  boundary/never-touches from PLAN step 1.5?
 If critique finds a real problem, go back to IMPLEMENT (or PLAN, if the
 problem is in the approach). If critique is clean, say so briefly and
 move on — this is not a second full code review, it's a gut-check.

@@ -11,6 +11,12 @@ hand-position AND theory cross-referencing" bundled together), STOP and
 tell the user this needs to be split into separate spikes, one per
 question. Do not proceed on a bundled question.
 
+This command can also be triggered mid-task (a genuine unknown surfacing
+during `task-loop`'s PLAN or IMPLEMENT, not from a pre-declared Open
+Question) — see `blueprint/research/research-integration.md`. The gates
+below are identical either way; a mid-task trigger does not skip
+confirmation.
+
 ## Step 1 — Lock the question and done-criteria BEFORE researching
 State back to the user, for confirmation:
 - The exact one-sentence question being researched
@@ -28,7 +34,19 @@ if research surfaces an interesting but unrelated tangent, note it as a
 one-line "worth a future spike" mention, do not follow it.
 
 ## Step 3 — Write the brief
-Create `.agents/research/<short-topic-name>.md` with:
+Create `.agents/research/<short-topic-name>.md`. Start with a front-matter
+block so `scripts/indexing/build-knowledge-index.js` can index it —
+required, not optional:
+```
+---
+topic: Short Topic Name
+tags: [keyword-one, keyword-two, keyword-three]
+status: proposed   # flip to "confirmed" only after Step 4 sign-off
+decided_date: YYYY-MM-DD
+summary: One or two sentence recommendation, not the full reasoning.
+---
+```
+Then the body:
 - The question
 - 2-4 candidate approaches with tradeoffs
 - One recommendation with reasoning
@@ -42,7 +60,11 @@ follow-up spike. Do not touch AGENTS.md until confirmed.
 ## Step 5 — On confirmation
 - Move the item from "Open Questions (BLOCKING)" to "Decided" in
   AGENTS.md, citing the brief file path instead of re-explaining reasoning
-  inline.
+  inline. (Skip this line if the spike was mid-task-triggered rather than
+  from a pre-declared Open Question — there's nothing to move.)
+- Run `scripts/indexing/build-knowledge-index.sh` so the brief's
+  front-matter is folded into `blueprint/state/knowledge-index.json` and
+  becomes visible to future tasks via `compose-context` Step 4.5.
 - Update `.agents/pipeline-status.md`: remove this line from Active
   Research Questions. If that list is now empty AND no preference-type
   Open Questions remain, set STATUS: complete for the define-concept
