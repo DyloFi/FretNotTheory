@@ -52,7 +52,7 @@ Valid STATUS values:
 The soundfont/playback task is complete. Ready for the next feature task
 or to finalize the working session by running auto-memory. Before
 starting the music theory calculation engine specifically: read
-.agents/research/theory-calculation-engine.md (status: proposed) and
+.agents/research/theory-calculation-engine.md (status: confirmed) - already done. Route to tab-theory-engine and
 either confirm it (flip status to "confirmed", re-run
 scripts/indexing/build-knowledge-index.sh) or redirect it — that's the
 one open loop from today's blueprint-layer work.
