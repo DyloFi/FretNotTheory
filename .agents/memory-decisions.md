@@ -8,6 +8,12 @@
 > - **Decision/Fix**: what was done
 > - **Note**: anything future-you needs to not repeat the mistake
 
+## [2026-07-06] Researched AlphaTab note highlighting and created Implementation Plan
+- **Context**: Needed to plan the implementation of dynamic theory lenses (Triads and Pentatonics) and playback controls.
+- **Decision/Fix**: Discovered that AlphaTab's `Note` class has a `realValue` property containing the MIDI key number, and a `style` property of type `NoteStyle` to customize individual note styling dynamically. Created a detailed implementation plan (`implementation_plan.md`) for the theory engine and control UI.
+- **Note**: None.
+- **Scope-check**: in-scope
+
 ## [2026-07-06] Rendered local guitar tab via AlphaTab in Next.js
 - **Context**: Needed to verify that AlphaTab can parse and render a local tablature file in Next.js without hitting external servers or CDNs.
 - **Decision/Fix**: Created a custom client-side dynamic React component `TabPlayer` that loads a locally generated `public/demo.musicxml` file. Copied Bravura SMuFL font files from `node_modules/@coderline/alphatab/dist/font/` into `public/font/` and pointed `core.fontDirectory` to `/font/` to prevent 404/CORS errors during offline rendering.
